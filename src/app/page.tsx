@@ -28,31 +28,29 @@ export default function Home() {
       <div className="orb orb-gold w-[400px] h-[400px] top-[200px] left-[-150px] animate-orb-2" />
       <div className="orb orb-purple w-[500px] h-[500px] bottom-[-200px] right-[20%] animate-orb-1" style={{ animationDelay: '5s' }} />
 
-      {/* Hero Section with AI Image */}
+      {/* Hero Section with Asset Tech Branding */}
       <section className="relative min-h-[90vh] flex items-center">
-        {/* Hero Background Image */}
+        {/* Hero Background Image - Asset Tech Circuit Logo */}
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            src="/images/hero-ai-network.png"
-            alt="AI Network Visualization"
+            src="/images/asset_tech_dark.webp"
+            alt="Asset Tech - Circuit Board Logo"
             fill
-            className="object-cover object-center opacity-40 animate-network"
+            className="object-cover object-center opacity-60 scale-110"
             priority
           />
-          <div className="hero-overlay absolute inset-0" />
-          <div className="absolute inset-0 bg-grid-pattern opacity-30" />
+          {/* Gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
         </div>
 
         <div className="relative container mx-auto px-6 py-20 lg:py-32">
           <div className="max-w-5xl mx-auto">
-            {/* Logo Mark with Glow */}
-            <div className="flex items-center gap-3 mb-8 opacity-0 animate-fade-in">
-              <div className="flex gap-0.5">
-                <div className="w-3 h-8 bg-accent rounded-sm glow-teal" />
-                <div className="w-3 h-8 bg-[oklch(0.75_0.16_85)] rounded-sm glow-gold" />
-              </div>
-              <span className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground">
-                Asset Tech
+            {/* Logo Badge */}
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full glass opacity-0 animate-fade-in border border-[#00d4ff]/20">
+              <div className="w-2 h-2 rounded-full bg-[#00d4ff] animate-pulse shadow-[0_0_10px_#00d4ff]" />
+              <span className="text-sm font-medium tracking-[0.15em] uppercase text-[#00d4ff]">
+                Asset Tech Platform
               </span>
             </div>
 
@@ -73,7 +71,7 @@ export default function Home() {
               assistance for Asset Living teams.
             </p>
 
-            {/* CTA Buttons with Glow */}
+            {/* CTA Buttons with Cyber Glow */}
             <div className="flex flex-wrap gap-4 opacity-0 animate-slide-up delay-300">
               {isPending ? (
                 <Button size="lg" disabled className="h-14 px-8 text-base">
@@ -83,7 +81,7 @@ export default function Home() {
                 <Button
                   asChild
                   size="lg"
-                  className="h-14 px-8 text-base group bg-accent hover:bg-accent/90 text-accent-foreground glow-teal transition-all hover:glow-teal-strong"
+                  className="h-14 px-8 text-base group bg-[#00d4ff] hover:bg-[#00d4ff]/90 text-background font-medium shadow-[0_0_20px_#00d4ff40] hover:shadow-[0_0_30px_#00d4ff60] transition-all"
                 >
                   <Link href="/dashboard">
                     Go to Dashboard
@@ -94,7 +92,7 @@ export default function Home() {
                 <Button
                   asChild
                   size="lg"
-                  className="h-14 px-8 text-base group bg-accent hover:bg-accent/90 text-accent-foreground glow-teal transition-all hover:glow-teal-strong"
+                  className="h-14 px-8 text-base group bg-[#00d4ff] hover:bg-[#00d4ff]/90 text-background font-medium shadow-[0_0_20px_#00d4ff40] hover:shadow-[0_0_30px_#00d4ff60] transition-all"
                 >
                   <Link href="/login">
                     Sign In
@@ -105,7 +103,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className="h-14 px-8 text-base border-border/50 hover:bg-secondary/50 hover:border-accent/50 transition-all"
+                className="h-14 px-8 text-base border-[#00d4ff]/30 hover:bg-[#00d4ff]/10 hover:border-[#00d4ff]/50 text-[#00d4ff] transition-all"
               >
                 Learn More
               </Button>
@@ -290,7 +288,7 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="h-14 px-10 text-base bg-primary hover:bg-primary/90 glow-teal transition-all hover:glow-teal-strong"
+                className="h-14 px-10 text-base bg-[#00d4ff] hover:bg-[#00d4ff]/90 text-background font-medium shadow-[0_0_20px_#00d4ff40] hover:shadow-[0_0_30px_#00d4ff60] transition-all"
               >
                 <Link href="/login">Get Started</Link>
               </Button>

@@ -82,6 +82,9 @@
   --asset-navy: oklch(0.145 0.035 250);
   --asset-teal: oklch(0.72 0.14 180);
   --asset-gold: oklch(0.75 0.16 85);
+  /* Asset Tech Cyber Blue - from circuit logo */
+  --asset-cyber: #00d4ff;
+  --asset-cyber-glow: 0 0 10px #00d4ff, 0 0 20px #00d4ff40;
 }
 
 .dark {
